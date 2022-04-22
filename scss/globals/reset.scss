@@ -1,0 +1,24 @@
+@use '../util' as *;
+
+html {
+	font-size: 100%;
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-image: url('/../img/pattern-background-mobile.svg');
+	background-repeat: repeat-x;
+	background-color: var(--PaleBlue);
+
+	@include breakpoint(medium) {
+		background-image: url('/../img/pattern-background-desktop.svg');
+	}
+}

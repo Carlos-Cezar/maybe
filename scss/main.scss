@@ -1,0 +1,5 @@
+//Vendors must be the first one to load so sass will overwrites the bootstrap _reboot.scss
+// @use 'vendors';
+
+@use 'globals';
+@use 'components';
